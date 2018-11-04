@@ -1,4 +1,6 @@
+// require mongoose
 const mongoose = require("mongoose");
+// require the schema
 const Schema = mongoose.Schema;
 
 const choresSchema = new Schema({

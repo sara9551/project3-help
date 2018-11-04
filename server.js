@@ -1,20 +1,22 @@
+// require express
 const express = require("express");
+// require mongoose
 const mongoose = require("mongoose");
+// require routes
 const routes = require("./routes");
 const app = express();
+// running app on localhost 3001
 const PORT = process.env.PORT || 3001;
 
-// Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-// Add routes, both API and view
+// Add routes
 app.use(routes);
 
-// Connect to the Mongo DB
+// Connect to Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactchorelist");
 
 // Start the API server
