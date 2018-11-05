@@ -56,16 +56,11 @@ class Chores extends Component {
             </Hero2>
             {this.state.Chores.length ? (
               <List>
-                {this.state.Chores.map(chore => (
-                  <ListItem key={chore._id}>
-                    <a href={"/Chores/" + chore._id}>
-                      <strong>
-                        {chore.title} by {chore.author}
-                      </strong>
+                  <ListItem key={Chores._id}>
+                    <a href={"/Chores/" + Chores._id}>
                     </a>
                     <DeleteBtn />
                   </ListItem>
-                ))}
               </List>
             ) : (
               <h3>No Chores at the moment</h3>
