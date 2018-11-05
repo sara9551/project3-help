@@ -1,4 +1,4 @@
-# Clicky-Game
+# Chore Manager
 
 This app lets users create a chore/task manager.
 
