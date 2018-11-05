@@ -6,7 +6,7 @@ This app lets users create a chore/task manager.
 * The following image illstrates:
 
 
-![h](client/public/screenshot2.png)
+![h](client/public/screenshot.png)
 
 
 **Technologies Used**

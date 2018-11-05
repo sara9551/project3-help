@@ -33,7 +33,7 @@ class Chores extends Component {
         <Row>
             <Col size="md-6">
             <Hero2>
-              <h1>What Chores Should I Read?</h1>
+              <h1>Write here your chores</h1>
             </Hero2>
             <br></br>
             <form>
